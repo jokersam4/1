@@ -1,13 +1,613 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.containerprc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.75rem;
+  /* You might adjust this value based on your requirement */
+  box-shadow: var(--borderShadow);
+
+  justify-content: center;
+  margin-top: 28px;
+  height: 400px;
+
+}
+
+.h3pricecard {
+  color: #22343d;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.ppricecard {
+  margin-bottom: 60px;
+  font-size: 20px;
+
+  margin-top: 5px;
+}
+
+.containerguide {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-around;
+
+}
+
+.leftguide {
+  width: 150px;
+  color: #02897A;
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.middleguide {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
+}
+
+.rightguide {
+  width: 150px;
+  color: #02897A;
+  font-size: 80px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.middleguide h4 {
+  color: #22343d;
+  font-size: 25px;
+}
+
+.containerguide h3 {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-around;
+}
+
+.pricecard h4 {
+  font-size: 220%;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  color: white;
+}
+
+.pricecard p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 8px;
+  color: white;
+
+}
+
+.pricecard button {
+  margin-top: 60px;
+}
+
+.pricecontainer2 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer {
+  margin-bottom: 30px;
+}
+
+.footer h6 {
+  margin-top: 200px;
+  font-size: 12px;
+  color: #22343d;
+
+
+}
+
+.footer h6 a {
+  text-decoration: none;
+  color: #22343d;
+
+}
+
+
+
+.footer a {
+  text-decoration: none;
+  color: #22343d;
+  font-size: 12px;
+
+}
+
+.yourp {
+  margin-top: 20px;
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+.yourappsec {
+
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  text-align: left;
+}
+
+.yourh2 {
+  color: #384e59;
+}
+
+.pricecard {
+  width: 350px;
+  background-color: #02897A;
+  border: #02897A 1px solid;
+  border-radius: 8%;
+  height: 100%;
+}
+
+.pprice .sign-out-button {
+  margin-top: 5px;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #02897A;
+
+  border-radius: 0.375rem;
+  border: 1px solid #02897A;
+  /* Green border */
+  color: #ffffff;
+}
+
+.sign-out-button:hover {
+  margin-top: 5px;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #ffffff;
+
+
+  border: 1px solid #02897A;
+  /* Green border */
+  color: #02897A;
+  cursor: pointer;
+}
+
+.container5 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 100px;
+  width: 90%;
+
+}
+
+.herotxt {
+
+  margin-top: 8%;
+  text-align: left;
+}
+
+.heroh1 {
+
+  color: #22343d;
+  font-weight: 80%;
+  font-size: 300%;
+  line-height: 1;
+}
+
+.herop {
+  color: grey;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.herobtn {
+  padding-left: 2rem;
+  /* px-8 */
+  padding-right: 2rem;
+  /* px-8 */
+  padding-top: 0.5rem;
+  /* py-2 */
+  padding-bottom: 0.5rem;
+  /* py-2 */
+  white-space: nowrap;
+  /* whitespace-nowrap */
+  font-weight: 600;
+  /* font-semibold */
+  font-size: 1.125rem;
+  /* text-lg */
+  background-color: #02897A;
+  /* bg-[#02897A] */
+  color: #ffffff;
+  /* text-white */
+  border-radius: 0.375rem;
+  /* rounded-md */
+  cursor: pointer;
+  /* cursor-pointer */
+  border: 1px solid #02897A;
+  /* border-[#02897A] */
+  transition-property: background-color, color, border-color, transform;
+  /* transition-all */
+  transition-duration: 0.2s;
+  /* duration-200 */
+}
+
+.herobtn:hover {
+  background-color: #ffffff;
+  /* hover:bg-white */
+  color: #02897A;
+  /* hover:text-[#02897A] */
+  border-color: #02897A;
+  /* hover:border-white */
+}
+
+/* Active styles */
+.herobtn:active {
+  transform: scale(0.9);
+  /* active:scale-90 */
+}
+
+.heroimg {
+  width: 80%;
+}
+
+:root {
+  --mainColor: #ffffff;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #000000;
+  --textColor: #000000;
+}
+
+
+
+.primary-button {
+  @apply px-8 py-2 whitespace-nowrap font-semibold text-lg bg-[#02897A] text-white rounded-md cursor-pointer border-[#02897A] hover:bg-white border-2 hover:text-[#02897A] transition-all duration-200 active:scale-90
+}
+
+.secondary-button {
+  @apply px-8 py-2 whitespace-nowrap font-semibold text-lg border-2 border-[#BCD0E5] rounded-md cursor-pointer hover:border-[#02897A] hover:text-[#02897A] duration-200 active:scale-90
+}
+
+.primary-button-white {
+  @apply primary-button bg-white text-primary hover:bg-primary hover:text-white hover:border-white
+}
+
+.nav-item {
+  @apply cursor-pointer px-4 hover:font-semibold hover:scale-105 transition transform active:scale-90
+}
+
+.container {
+  @apply max-w-7xl m-auto px-8 sm:px-12
+}
+
+.icon-button {
+  @apply hover:scale-125 active:scale-95 cursor-pointer duration-200
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin: auto;
+  width: 90%;
+
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+
+.questions {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 70px;
+}
+
+.questionsdiv h4 {
+  color: #22343d;
+  font-size: 20px;
+}
+
+.questionsdiv p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.questionsdiv {
+  text-align: left;
+  width: 30%;
+}
+
+.premiuma {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+  gap: 2px;
+  position: relative;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.def {
+  position: absolute;
+  right: 10%;
+
+}
+
+.motiondiva {
+  display: block;
+
+}
+
+.userpdp {
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+
+
+}
+
+.welcome {
+  position: absolute;
+  right: 10%;
+
+}
+
+.sign-in-button {
+  position: absolute;
+  cursor: pointer;
+  right: 10%;
+  background-color: #02897A;
+  /* Green */
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.sign-in-button:hover {
+  background-color: white;
+  border: 1px solid #02897A;
+  /* Green border */
+  color: #02897A;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+  font-size: larger;
+  font-weight: 700;
+}
+
+
+
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logout {
+  display: block;
+
+}
+
+.logout .button {
+  margin-top: 10%;
+}
+
+
+
+
+@media only screen and (max-width: 1140px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .containerguide {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+
+    margin-top: 60px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  .questions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .questionsdiv {
+    width: 80%;
+
+  }
+
+  .leftguide {
+    width: 150px;
+    color: #02897A;
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .middleguide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+  }
+
+  .rightguide {
+    width: 150px;
+    color: #02897A;
+    font-size: 80px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .container5 {
+    flex-direction: column;
+
+  }
+
+  .def {
+    flex-direction: column;
+
+  }
+
+  .def {
+    position: relative;
+    margin-left: 18%;
+    margin-top: 10%;
+  }
+
+  .pricecard {
+    width: 250px;
+
+  }
+
+  .heroimg {
+    margin-top: 20%;
+  }
+
+  .welcome {
+    position: relative;
+    margin-left: 18%;
+  }
+
+  .sign-in-button {
+    position: relative;
+
+    background-color: #02897A;
+    /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+
+
+    text-decoration: none;
+    margin-left: 18%;
+    font-size: large;
+
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+
+  .pricecontainer2 {
+    flex-direction: column;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .pricecard {
+    width: 200px;
+
+  }
+
+  .pricecard button {
+    margin-top: 30px;
+  }
 }
